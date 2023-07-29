@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/signUp.css" />
+    <!-- <link rel="stylesheet" href="./css/reset.css" /> -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/Logo.png"
+      type="image/x-icon"
+    />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <main>
+      <div class="page-bg">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./assets/images/Logo.png" alt="Logo" />
+          </a>
+        </div>
+        <div class="register-container">
+          <h1>Sign Up</h1>
+          <form id="form">
+            <div>
+              <i class="fa-regular fa-user"></i>
+
+              <input
+                class="fName-form"
+                type="text"
+                placeholder="First name"
+                id="firstName"
+                required
+                onkeyup="firstNameValidation()"
+              />
+              <br />
+              <label id="FnameValidation"></label>
+            </div>
+            <div>
+              <i class="fa-regular fa-user"></i>
+              <input
+                class="lName-form"
+                type="text"
+                placeholder="Last name"
+                id="lastName"
+                required
+                onkeyup="lastNameValidation()"
+              />
+              <br />
+              <label id="LnameValidation"></label>
+            </div>
+            <div>
+              <i class="fa-regular fa-envelope"></i>
+              <input
+                class="email-form"
+                type="email"
+                placeholder="Example@gmail.com"
+                id="email"
+                required
+                onkeyup="emailValidation()"
+              />
+              <br />
+              <label id="emailValidation"></label>
+            </div>
+            <div>
+              <i class="fa-solid fa-lock"></i>
+              <input
+                class="password-form"
+                type="password"
+                placeholder="New password"
+                id="password"
+                required
+                onkeyup="passwordValidation()"
+              />
+              <br />
+              <label id="passwordValidation"></label>
+            </div>
+            <div>
+              <i class="fa-solid fa-lock"></i>
+              <input
+                class="repeat-password"
+                type="password"
+                placeholder="Repeat password"
+                id="repeatPassword"
+                required
+                onkeyup="repeatPasswordValidation()"
+              />
+            </div>
+            <div class="terms">
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="terms"
+                id="terms"
+                required
+              />
+              <a href="#">Terms and Policies</a>
+            </div>
+            <div id="result"></div>
+            <div class="signup-btn">
+              <button type="submit" id="submit" onclick="signUp()">
+                Sign Up
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script type="text/javascript" src="./scripts/signUp.js"></script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@font-face {
+  font-family: "Poppins";
+  src: url(../assets/fonts/Poppins-Regular.ttf);
+}
+* {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+input {
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+  background-image: url(../assets/images/wooman_image.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: antiquewhite;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 20% auto 0 auto;
+}
+.login-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: auto;
+  border: 2px solid gray;
+  margin-top: 10px;
+  padding: 20px 40px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 20px;
+}
+.login-container h1 {
+  font-size: 1.5rem;
+}
+.login-container button {
+  display: flex;
+  background-color: rgb(27, 190, 27);
+  color: white;
+  padding: 10px 30px;
+  border: 2px solid rgb(27, 190, 27);
+  border-radius: 10px;
+  margin: 15px auto;
+  cursor: pointer;
+}
+.login-container button:hover {
+  background-color: white;
+  color: rgb(27, 190, 27);
+  border: 2px solid rgb(27, 190, 27);
+}
+.email {
+  border: 1px solid gray;
+  padding: 5px 0;
+  border-radius: 10px;
+}
+i {
+  margin-left: 5px;
+}
+.password {
+  border: 1px solid gray;
+  padding: 5px 0;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.new-acc-btn {
+  text-align: center;
+}

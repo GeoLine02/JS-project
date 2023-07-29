@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/Logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/aboutUS.css" />
+    <title>About Us</title>
+  </head>
+  <body>
+    <header>
+      <div class="headerNav">
+        <div class="logo">
+          <a href="main.html">
+            <img src="./assets/images/Logo.png" alt="Logo" loading="lazy" />
+          </a>
+        </div>
+        <nav class="navbar">
+          <ul class="u_list">
+            <li class="nav-item">
+              <a class="nav-link" href="./tickets.html">Tickets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./aboutUs.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a
+                id="logOut"
+                onclick="logOut()"
+                href="index.html"
+                class="nav-link"
+                >Log out</a
+              >
+            </li>
+          </ul>
+
+          <div onclick="burgerMenu()" class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </div>
+      <!-- <div class="logo">
+        <a href="index.html">
+          <img src="./assets/images/Logo.png" alt="Logo" />
+        </a>
+      </div> -->
+    </header>
+    <main>
+      <div class="heading">
+        <h1>About Us!</h1>
+      </div>
+      <div class="welcomeText">
+        <h2>Welcome To Jadoo.com</h2>
+      </div>
+      <p>
+        Jadoo.com is a Professional tourist company Platform. Here we will
+        provide you only interesting content, which you will like very much.
+        We're dedicated to providing you the best of tourist company, with a
+        focus on dependability and tourism. We're working to turn our passion
+        for tourist company into a booming
+        <a
+          href="https://www.blogearns.com/2021/05/free-about-us-page-generator.html"
+          rel="do-follow"
+          style="color: inherit; text-decoration: none"
+          >online website</a
+        >. We hope you enjoy our tourist company as much as we enjoy offering
+        them to you.
+      </p>
+      <p>
+        I will keep posting more important posts on my Website for all of you.
+        Please give your support and love.
+      </p>
+
+      <button onclick="siteFoundrs()" class="founders_btn">
+        Site Founders
+      </button>
+
+      <div class="founderImgs">
+        <div class="card">
+          <div class="cardPic">
+            <img
+              style="width: 200px"
+              height="250px"
+              src="./assets/images/siteFounder1.jpg"
+              alt="founder1"
+            />
+          </div>
+          <div class="founderText">
+            <p>Bob Willson</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="cardPic">
+            <img
+              style="width: 200px"
+              height="250px"
+              src="./assets/images/siteFounder2.jpg"
+              alt="founder2"
+            />
+          </div>
+          <div style="left: 15px" class="founderText">
+            <p>Tom Devidson</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="cardPic">
+            <img
+              style="width: 200px"
+              height="250px"
+              src="./assets/images/siteFounder3.jpg"
+              alt="founder3"
+            />
+          </div>
+          <div class="founderText">
+            <p>Ann Smith</p>
+          </div>
+        </div>
+      </div>
+      <div class="niceDay">
+        <p style="font-weight: bold; text-align: center">
+          Thanks For Visiting Our Site<br /><br />
+          Have a nice day!<span style="color: red"> ❤❤❤</span>
+        </p>
+      </div>
+    </main>
+    <script type="text/javascript" src="./scripts/aboutUS.js"></script>
+  </body>
+</html>

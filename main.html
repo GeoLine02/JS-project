@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="discription"
+      content="es aris turistuli saagentos landing page"
+    />
+    <meta
+      name="keywords"
+      content="trips, tours,landing page, ტურები, მოგზაურობა,"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Nika Wuladze" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./assets/images/Logo.png" type="image/x-icon" />
+    <meta property="og:title" content="European Travel Destinations" />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:image"
+      content="http://euro-travel-example.com/thumbnail.jpg"
+    />
+    <meta
+      property="og:url"
+      content="http://euro-travel-example.com/index.htm"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!--  Non-Essential, But Recommended -->
+    <meta
+      property="og:description"
+      content="Offering tour packages for individuals or groups."
+    />
+    <meta property="og:site_name" content="European Travel, Inc." />
+    <meta name="twitter:image:alt" content="Alt text for image" />
+
+    <!--  Non-Essential, But Required for Analytics -->
+    <meta property="fb:app_id" content="your_app_id" />
+    <meta name="twitter:site" content="@website-username" />
+    <title>Traveling Agency</title>
+  </head>
+  <body>
+    <header>
+      <div class="header_nav">
+        <div class="logo">
+          <a href="./main.html">
+            <img src="./assets/images/Logo.png" alt="Logo" loading="lazy" />
+          </a>
+        </div>
+        <nav class="navbar">
+          <ul class="u_list">
+            <li class="nav-item">
+              <a class="nav-link" href="./tickets.html">Tickets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./aboutUs.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a
+                id="logOut"
+                onclick="logOut()"
+                href="index.html"
+                class="nav-link"
+                >Log out</a
+              >
+            </li>
+          </ul>
+
+          <div onclick="burgerMenu()" class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </div>
+      <div class="hero">
+        <div class="hero-text">
+          <span>best destinations around the world</span>
+          <h1>
+            Travel, enjoy<br />
+            and live a new<br />and full life
+          </h1>
+          <p>
+            Built Wicket longer admire do barton vanity itself do in it.<br />
+            Preferred to sportsmen it engrossed listening. Park gate<br />
+            sell they west hard for the.
+          </p>
+          <div class="hero-btn">
+            <button class="left-btn" type="button">
+              <a class="nav-link" href="./tickets.html">Tickets</a>
+            </button>
+            <button class="right-btn" type="button">
+              <img
+                loading="lazy"
+                src="./assets/images/Play_button.png"
+                alt="play button"
+              />
+            </button>
+            <p>Play Demo</p>
+          </div>
+        </div>
+        <div class="wooman-img">
+          <img
+            loading="lazy"
+            src="./assets/images/wooman_image.png"
+            alt="hero photo"
+          />
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- best-offer-section -->
+
+      <div class="best-offer">
+        <h2>category</h2>
+        <h1>We Offer Best Services</h1>
+      </div>
+      <div class="services">
+        <div class="card">
+          <div class="service-img">
+            <img
+              loading="lazy"
+              src="./assets/images/service-1.png"
+              alt="service-1"
+            />
+          </div>
+          <h1>Calculated Weather</h1>
+          <p>Built Wicket longer admire do barton vanity itself do in it.</p>
+        </div>
+        <div class="card">
+          <div class="service-img">
+            <img
+              loading="lazy"
+              src="./assets/images/service-2.png"
+              alt="service-2"
+            />
+          </div>
+          <h1>Best Flights</h1>
+          <p>Engrossed listening. Park gate sell they west hard for the.</p>
+        </div>
+        <div class="card">
+          <div class="service-img">
+            <img
+              loading="lazy"
+              src="./assets/images/service-3.png"
+              alt="service-3"
+            />
+          </div>
+          <h1>Local Events</h1>
+          <p>
+            Barton vanity itself do in it. Preferd to men it engrossed
+            listening.
+          </p>
+        </div>
+        <div class="card">
+          <div class="service-img">
+            <img
+              loading="lazy"
+              src="./assets/images/service-4.png"
+              alt="service-4"
+            />
+          </div>
+          <h1>Costumization</h1>
+          <p>We deliver outsourced aviation services for military customers</p>
+        </div>
+      </div>
+
+      <!-- slider section -->
+
+      <div class="slider-container">
+        <div class="sliderPicture fade">
+          <img
+            loading="lazy"
+            width="1100px"
+            src="./assets/images/rome high res.jpg"
+            alt="slider Picture 1"
+          />
+        </div>
+        <div class="sliderPicture fade">
+          <img
+            loading="lazy"
+            width="1100px"
+            src="./assets/images/paris high res.jpg"
+            alt="slider Picture 2"
+          />
+        </div>
+        <div class="sliderPicture fade">
+          <img
+            loading="lazy"
+            width="1100px"
+            src="./assets/images/italy high res.jpg"
+            alt="slider Picture 2"
+          />
+        </div>
+        <a class="previous" onclick="moveSlides(-1)">&#8592;</a>
+        <a class="next" onclick="moveSlides(1)">&#8594;</a>
+
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+
+      <!-- top selling section -->
+
+      <div class="top-destinations">
+        <h2>Top Selling</h2>
+        <h1>Top Destinations</h1>
+      </div>
+      <div class="trip">
+        <div class="destination-offers">
+          <div class="destination-img">
+            <img
+              loading="lazy"
+              src="./assets/images/Destination-1.png"
+              alt="Destination-1"
+            />
+          </div>
+          <div class="price">
+            <span
+              >Rome, Italty
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&dollar;5,42k
+            </span>
+          </div>
+          <div class="time">
+            <i class="fa-solid fa-location-arrow"></i>
+            10 Days Trip
+          </div>
+        </div>
+        <div class="destination-offers">
+          <div class="destination-img">
+            <img
+              loading="lazy"
+              src="./assets/images/Destination-2.png"
+              alt="Destination-2"
+            />
+          </div>
+          <div class="price">
+            <span
+              >London, UK
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &dollar;4,2k
+            </span>
+          </div>
+          <div class="time">
+            <i class="fa-solid fa-location-arrow"></i>
+            12 Days Trip
+          </div>
+        </div>
+        <div class="destination-offers">
+          <div class="destination-img">
+            <img
+              loading="lazy"
+              src="./assets/images/Destination-3.png"
+              alt="Destination-3"
+            />
+          </div>
+          <div class="price">
+            <span
+              >Full Europe
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &dollar;15k
+            </span>
+          </div>
+          <div class="time">
+            <i class="fa-solid fa-location-arrow"></i>
+            28 Days Trip
+          </div>
+        </div>
+      </div>
+
+      <!-- Trip Booking Section -->
+
+      <div class="booking-container">
+        <div class="container-left">
+          <div class="left-heading">
+            <h2>Easy and Fast</h2>
+            <h1>Book Your Next Trip In 3 Easy Steps</h1>
+          </div>
+          <div class="steps">
+            <div class="step-img">
+              <img
+                loading="lazy"
+                src="./assets/images/value-1.png"
+                alt="step 1"
+              />
+            </div>
+            <p>
+              <span>Choose Destiantion</span><br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+              tortor tempus.
+            </p>
+          </div>
+          <div class="steps">
+            <div class="step-img">
+              <img
+                loading="lazy"
+                src="./assets/images/value-2.png"
+                alt="step 2"
+              />
+            </div>
+            <p>
+              <span>Choose Destiantion</span><br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+              tortor tempus.
+            </p>
+          </div>
+          <div class="steps">
+            <div class="step-img">
+              <img
+                loading="lazy"
+                src="./assets/images/value-3.png"
+                alt="step 3"
+              />
+            </div>
+            <p>
+              <span>Choose Destiantion</span><br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+              tortor tempus.
+            </p>
+          </div>
+        </div>
+        <div class="container-right">
+          <div class="greece-img">
+            <img
+              loading="lazy"
+              src="./assets/images/trip-in-greece.jpg"
+              alt="greece image"
+            />
+          </div>
+          <h1>trip to greece</h1>
+          <p>14-29 June | by Robbin jo</p>
+          <i class="fa-solid fa-leaf"></i>
+          <i class="fa-sharp fa-solid fa-paper-plane"></i>
+          <i class="fa-regular fa-map"></i>
+          <p>24 people going</p>
+          <div class="rome-div">
+            <div class="rome-img">
+              <img
+                loading="lazy"
+                src="./assets/images/rome-photo.png"
+                alt="Rome Photo"
+              />
+            </div>
+            <div class="rome-text">
+              <p>ongoing</p>
+              <p>Trip to rome</p>
+              <p><span>40%</span> completed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonials section -->
+
+      <div class="testimonial-container">
+        <div class="testimonial-left">
+          <h1>What People Say<br />About Us.</h1>
+        </div>
+        <div class="testimonial-right">
+          <div class="testimonial-text">
+            <div class="testimoial-img">
+              <img
+                loading="lazy"
+                src="./assets/images/testimonial-img.png"
+                alt="testimoial-img"
+              />
+            </div>
+            <p>
+              “On the Windows talking painted pasture yet its <br />
+              express parties use. Sure last upon he same as<br />
+              knew next. Of believed or diverted no.”
+            </p>
+            <br />
+            <br />
+            <h2>Mike taylor</h2>
+            <p>lahore, Pakistan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sponsor Logos -->
+
+      <div class="sponsors">
+        <div class="sponsor-img">
+          <img
+            loading="lazy"
+            src="./assets/images/Axon_logo.png"
+            alt="Axon Logo"
+          />
+        </div>
+        <div class="sponsor-img">
+          <img
+            loading="lazy"
+            src="./assets/images/Jetstar_logo.png"
+            alt="Jetstar Logo"
+          />
+        </div>
+        <div class="sponsor-img">
+          <img
+            loading="lazy"
+            src="./assets/images/Expedia_logo.png"
+            alt="Expedia Logo"
+          />
+        </div>
+        <div class="sponsor-img">
+          <img
+            loading="lazy"
+            src="./assets/images/Qantas_logo.png"
+            alt="Qantas Logo"
+          />
+        </div>
+        <div class="sponsor-img">
+          <img
+            loading="lazy"
+            src="./assets/images/alitalia-logo.png"
+            alt="alitalia logo"
+          />
+        </div>
+
+        <div class="sponsorDots" style="text-align: center">
+          <span class="autoDot" onclick="currentSlide(1)"></span>
+          <span class="autoDot" onclick="currentSlide(2)"></span>
+          <span class="autoDot" onclick="currentSlide(3)"></span>
+          <span class="autoDot" onclick="currentSlide(4)"></span>
+          <span class="autoDot" onclick="currentSlide(5)"></span>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <!-- footer nav -->
+
+      <div class="footer-nav">
+        <div class="footer-left">
+          <div class="logo">
+            <img loading="lazy" src="./assets/images/Logo.png" alt="Logo" />
+          </div>
+          <p>Book your trip in minute, get full Control for much longer.</p>
+        </div>
+        <div class="footer-middle">
+          <nav class="footer-nav">
+            <ul>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Careers</a>
+              </li>
+              <li>
+                <a href="#">Mobile</a>
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                <a href="#">Help/FAQ</a>
+              </li>
+              <li>
+                <a href="#">Press</a>
+              </li>
+              <li>
+                <a href="#">Affilates</a>
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                <a href="#">Airlinefees</a>
+              </li>
+              <li>
+                <a href="#">Airline</a>
+              </li>
+              <li>
+                <a href="#">Low fare tips</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-right">
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img
+              loading="lazy"
+              src="./assets/images/facebook_logo.png"
+              alt="Facebook-logo"
+          /></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img
+              loading="lazy"
+              src="./assets/images/instagram_logo.png"
+              alt="Instagram logo"
+          /></a>
+          <a href="https://twitter.com/" target="_blank"
+            ><img
+              loading="lazy"
+              src="./assets/images/twitter_logo.png"
+              alt="Twitter logo"
+          /></a>
+          <p>Discover our app</p>
+          <a href="https://play.google.com/store/games?pli=1" target="_blank"
+            ><img
+              loading="lazy"
+              src="./assets/images/Google_Play.png"
+              alt="Play store button"
+          /></a>
+          <a href="https://www.apple.com/app-store/" target="_blank"
+            ><img
+              loading="lazy"
+              src="./assets/images/app_store.png"
+              alt="App store logo"
+          /></a>
+        </div>
+        <div class="footer-mail">
+          <p>All rights reserved@jadoo.co</p>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="./scripts/main.js"></script>
+  </body>
+</html>

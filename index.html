@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/Logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/login.css" />
+    <!-- <link rel="stylesheet" href="./css/reset.css" /> -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <main>
+      <div class="page-bg">
+        <div class="logo">
+          <img src="./assets/images/Logo.png" alt="Jadoo logo" />
+        </div>
+        <div class="login-container">
+          <h1>login</h1>
+          <form id="form">
+            <div class="email">
+              <i class="fa-regular fa-envelope"></i>
+              <input required id="email" type="email" placeholder="mail" />
+            </div>
+            <div class="password">
+              <i class="fa-solid fa-lock"></i>
+              <input
+                required
+                id="password"
+                type="password"
+                placeholder="password"
+              />
+            </div>
+            <div style="text-align: center">
+              <input id="savePassword" type="checkbox" />
+              <span>Save Password</span>
+            </div>
+            <div class="login-btn">
+              <button onclick="handleLogin()" class="Login-btn" type="submit">
+                Log In
+              </button>
+            </div>
+            <div class="new-acc-btn">
+              <a href="#">Forget Password?</a>
+              <a href="./signUp.html"
+                ><button class="create-new-acc" type="button">
+                  Create New Account
+                </button></a
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script type="text/javascript" src="./scripts/login.js"></script>
+  </body>
+</html>

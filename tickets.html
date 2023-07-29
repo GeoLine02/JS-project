@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/Logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/tickets.css" />
+    <title>Tickets</title>
+  </head>
+  <body>
+    <header>
+      <div class="headerNav">
+        <div class="logo">
+          <a href="./main.html">
+            <img src="./assets/images/Logo.png" alt="Logo" />
+          </a>
+        </div>
+        <nav>
+          <ul class="u_list">
+            <li class="nav-item">
+              <a href="main.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="tickets.html">Tickets</a>
+            </li>
+            <li class="nav-item">
+              <a href="./aboutUs.html">Abuot Us</a>
+            </li>
+            <li class="nav-item">
+              <a onclick="logOut()" href="./index.html">Log out</a>
+            </li>
+          </ul>
+        </nav>
+        <div onclick="burgerMenu()" class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h1 style="text-align: center">Check current weather before Book</h1>
+      <input
+        class="weather-input"
+        id="cityName"
+        type="text"
+        placeholder="City Name"
+      />
+      <button
+        onclick="resolveWeatherInfo()"
+        class="submit-weather"
+        type="submit"
+      >
+        submit
+      </button>
+      <div class="weather-result" id="result"></div>
+
+      <h1 class="header-h1">Flight Tickets</h1>
+      <input
+        class="filter"
+        type="text"
+        id="input"
+        placeholder="search tickets"
+        onkeyup="itemFilter()"
+      />
+      <div class="cardRow">
+        <div class="card">
+          <h1>Rome</h1>
+          <div class="cardIMG">
+            <img src="./assets/images/Rome-Pic.webp" alt="Rome" />
+          </div>
+          <p>Trip to Rome</p>
+          <p>price: 40<span>$</span></p>
+        </div>
+        <div class="card">
+          <h1>Greece</h1>
+          <div class="cardIMG">
+            <img src="./assets/images/Greece-Pic.jpg" alt="Greece" />
+          </div>
+          <p>Trip to Greece</p>
+          <p>Price: 60<span>$</span></p>
+        </div>
+        <div class="card">
+          <h1>France</h1>
+          <div class="cardIMG">
+            <img src="./assets/images/France-Pic.jpg" alt="france" />
+          </div>
+          <p>Trip to France</p>
+          <p>Price: 65<span>$</span></p>
+        </div>
+        <div class="card">
+          <h1>Georgia</h1>
+          <div class="cardIMG">
+            <img src="./assets/images/Georgia-Pic.jpg" alt="Georgia" />
+          </div>
+          <p>Trip to Georgia</p>
+          <p>Price: 50<span>$</span></p>
+        </div>
+      </div>
+      <div id="cardRow" class="cardRow">
+        <div class="card">
+          <h1>France</h1>
+          <div class="cardIMG">
+            <img src="./assets/images/France-Pic.jpg" alt="France" />
+          </div>
+          <p>Trip to France</p>
+          <p>Price: 65<span>$</span></p>
+        </div>
+        <div class="card">
+          <h1>Georgia</h1>
+          <div class="cardIMG">
+            <img src="./assets/images/Georgia-Pic.jpg" alt="Georgia" />
+          </div>
+          <p>Trip to Georgia</p>
+          <p>Price: 60<span>$</span></p>
+        </div>
+        <div class="card">
+          <h1>Korea</h1>
+          <div class="cardIMG">
+            <img src="./assets/images/Korea-Pic.jpeg" alt="Korea" />
+          </div>
+          <p>Trip to Korea</p>
+          <p>Price: 75<span>$</span></p>
+        </div>
+        <div class="card">
+          <h1>Rome</h1>
+          <div class="cardIMG">
+            <img src="./assets/images/Rome-Pic.webp" alt="Rome" />
+          </div>
+          <p>Trip to Rome</p>
+          <p>price: 60<span>$</span></p>
+        </div>
+      </div>
+      <div id="cardRow" class="cardRow">
+        <div class="card">
+          <h1>Korea</h1>
+          <div class="cardIMG">
+            <img src="./assets/images/Korea-Pic.jpeg" alt="Korea" />
+          </div>
+          <p>Trip to Korea</p>
+          <p>Price: 75<span>$</span></p>
+        </div>
+        <div class="card">
+          <h1>Rome</h1>
+          <div class="cardIMG">
+            <img src="./assets/images/Rome-Pic.webp" alt="Rome" />
+          </div>
+          <p>Trip to Rome</p>
+          <p>price: 60<span>$</span></p>
+        </div>
+        <div class="card">
+          <h1>US</h1>
+          <div class="cardIMG">
+            <img src="./assets/images/US-Pic.jpg" alt="US" />
+          </div>
+          <p>Trip to US</p>
+          <p>Price: 80<span>$</span></p>
+        </div>
+        <div class="card">
+          <h1>US</h1>
+          <div class="cardIMG">
+            <img src="./assets/images/US-Pic.jpg" alt="US" />
+          </div>
+          <p>Trip to US</p>
+          <p>Price: 80<span>$</span></p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <!-- footer nav -->
+
+      <div class="footer-nav">
+        <div class="footer-left">
+          <div class="logo">
+            <img src="./assets/images/Logo.png" alt="Logo" />
+          </div>
+          <p>Book your trip in minute, get full Control for much longer.</p>
+        </div>
+        <div class="footer-middle">
+          <nav class="footer-nav">
+            <ul>
+              <li>
+                <a href="aboutUs.html">About</a>
+              </li>
+              <li>
+                <a href="#">Careers</a>
+              </li>
+              <li>
+                <a href="#">Mobile</a>
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                <a href="#">Help/FAQ</a>
+              </li>
+              <li>
+                <a href="#">Press</a>
+              </li>
+              <li>
+                <a href="#">Affilates</a>
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                <a href="#">Airlinefees</a>
+              </li>
+              <li>
+                <a href="#">Airline</a>
+              </li>
+              <li>
+                <a href="#">Low fare tips</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-right">
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img src="./assets/images/facebook_logo.png" alt="Facebook-logo"
+          /></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img src="./assets/images/instagram_logo.png" alt="Instagram logo"
+          /></a>
+          <a href="https://twitter.com/" target="_blank"
+            ><img src="./assets/images/twitter_logo.png" alt="Twitter logo"
+          /></a>
+          <p>Discover our app</p>
+          <a href="https://play.google.com/store/games?pli=1" target="_blank"
+            ><img src="./assets/images/Google_Play.png" alt="Play store button"
+          /></a>
+          <a href="https://www.apple.com/app-store/" target="_blank"
+            ><img src="./assets/images/app_store.png" alt="App store logo"
+          /></a>
+        </div>
+        <div class="footer-mail">
+          <p>All rights reserved@jadoo.co</p>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="./scripts/tickets.js"></script>
+  </body>
+</html>
